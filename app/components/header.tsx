@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import DesktopNavbar from './navbar';
+import MobileNav from './mobile-nav';
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
         {/* Desktop Navbar */}
         <DesktopNavbar />
         {/* Mobile Navbar */}
+        <MobileNav />
       </div>
     </header>
   );

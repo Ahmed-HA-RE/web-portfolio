@@ -17,7 +17,7 @@ const DesktopNavbar = () => {
             key={item.title}
             href={item.href}
             className={cn(
-              'hover:text-primary text-secondary-text font-medium',
+              'hover:text-primary text-secondary-text font-medium transition-colors duration-300',
               pathname === item.href && 'text-primary border-b border-primary',
             )}
           >
@@ -26,8 +26,8 @@ const DesktopNavbar = () => {
         ))}
       </div>
       <Separator orientation='vertical' className='!h-9 max-md:hidden' />
-      <Button className='rounded-lg text-base max-md:hidden' size='lg' asChild>
-        <Link href='/contact'>Contact</Link>
+      <Button className='rounded-full max-md:hidden' size='sm' asChild>
+        <Link href='/hire-me'>Hire Me</Link>
       </Button>
     </nav>
   );
