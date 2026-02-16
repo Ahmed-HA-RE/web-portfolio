@@ -2,8 +2,13 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { SERVER_URL } from '@/lib/constants';
+import Header from '@/app/components/header';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+});
 
 export const metadata: Metadata = {
   title: {
@@ -29,6 +34,7 @@ export default function RootLayout({
     <html lang='en' className={inter.variable}>
       <body>
         <div className='flex flex-col min-h-screen'>
+          <Header />
           <main className='flex-grow'>{children}</main>
         </div>
       </body>

@@ -17,8 +17,8 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
-  --color-text-primary: var(--color-text-primary);
-  --color-text-secondary: var(--color-text-secondary);
+  --color-primary-text: var(--color-primary-text);
+  --color-secondary-text: var(--color-secondary-text);
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
@@ -50,7 +50,7 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
+  --background: #1c1c22;
   --foreground: oklch(0.13 0.028 261.692);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.13 0.028 261.692);
@@ -82,8 +82,8 @@
   --sidebar-accent-foreground: oklch(0.21 0.034 264.665);
   --sidebar-border: oklch(0.928 0.006 264.531);
   --sidebar-ring: oklch(0.707 0.022 261.325);
-  --color-text-primary: #1f1f1f;
-  --color-text-secondary: #555555;
+  --color-primary-text: #ffffff;
+  --color-secondary-text: #cccccc;
 }
 
 @layer base {
@@ -91,6 +91,12 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-primary-text leading-loose;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-7xl px-4;
   }
 }
