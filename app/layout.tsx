@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { SERVER_URL } from '@/lib/constants';
 import Header from '@/app/components/header';
+import PageTransition from './components/page-transition';
+import StairEffect from './components/stair-effect';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -35,6 +37,8 @@ export default function RootLayout({
       <body>
         <div className='flex flex-col min-h-screen'>
           <Header />
+          <StairEffect />
+          <PageTransition />
           <main className='flex-grow'>{children}</main>
         </div>
       </body>

@@ -3,7 +3,7 @@ import DesktopNavbar from './navbar';
 
 const Header = () => {
   return (
-    <header className='top-0 z-50'>
+    <header>
       <div className='container flex items-center justify-between gap-8 py-8 xl:py-12'>
         <Link href='/'>
           <h1 className='text-4xl font-semibold'>
