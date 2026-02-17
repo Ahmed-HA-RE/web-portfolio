@@ -5,6 +5,7 @@ import { SERVER_URL } from '@/lib/constants';
 import Header from '@/app/components/header';
 import PageTransition from './components/page-transition';
 import StairEffect from './components/stair-effect';
+import Footer from './components/footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -40,6 +41,7 @@ export default function RootLayout({
           <StairEffect />
           <PageTransition />
           <main className='flex-grow'>{children}</main>
+          <Footer />
         </div>
       </body>
     </html>

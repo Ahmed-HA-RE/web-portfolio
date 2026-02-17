@@ -99,6 +99,15 @@
   .container {
     @apply mx-auto max-w-7xl px-4;
   }
+  .section-spacing {
+    @apply py-8 sm:py-16 lg:py-24;
+  }
+}
+
+@property --button-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: -75deg;
 }
 
 @property --button-angle {

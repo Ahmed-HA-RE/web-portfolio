@@ -33,7 +33,7 @@ const socailLinks = [
 
 const HeroSection = () => {
   return (
-    <section className='py-8 sm:py-16 lg:py-24'>
+    <section className='section-spacing'>
       <div className='container'>
         <div className='flex flex-col xl:flex-row items-center justify-between gap-y-14'>
           {/* My Info */}
@@ -73,7 +73,7 @@ const HeroSection = () => {
                     href={link.url}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='hover:scale-110 transition-transform bg-transparent border border-primary rounded-full size-9 flex justify-center items-center'
+                    className='hover:scale-110 transition-transform bg-transparent border border-primary rounded-full size-9 flex justify-center items-center cursor-pointer'
                   >
                     {link.icon}
                   </a>
