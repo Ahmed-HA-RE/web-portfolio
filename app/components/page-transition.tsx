@@ -13,7 +13,7 @@ const PageTransition = () => {
         initial={{ opacity: 1 }}
         animate={{ opacity: 0 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.4, ease: 'easeInOut', delay: 1 }}
+        transition={{ duration: 0.35, ease: 'easeInOut', delay: 1 }}
         className='w-screen h-screen bg-background fixed inset-0 pointer-events-none'
       />
     </AnimatePresence>

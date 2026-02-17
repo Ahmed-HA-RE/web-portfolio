@@ -26,8 +26,8 @@ const DesktopNavbar = () => {
         ))}
       </div>
       <Separator orientation='vertical' className='!h-9 max-md:hidden' />
-      <Button className='rounded-full max-md:hidden' size='sm' asChild>
-        <Link href='/hire-me'>Hire Me</Link>
+      <Button className='rounded-full max-md:hidden' size='default' asChild>
+        <Link href='/contact'>Hire Me</Link>
       </Button>
     </nav>
   );
