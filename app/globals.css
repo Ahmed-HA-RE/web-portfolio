@@ -47,6 +47,16 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+  --animate-rippling: rippling 0.5s ease-out;
+  @keyframes rippling {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
 }
 
 :root {
@@ -111,7 +121,7 @@
 }
 
 @property --button-angle {
-    syntax: '<angle>';
-    inherits: false;
-    initial-value: -75deg;
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: -75deg;
 }
