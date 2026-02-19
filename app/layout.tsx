@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { SERVER_URL } from '@/lib/constants';
 import Header from '@/app/components/header';
@@ -7,7 +7,7 @@ import PageTransition from './components/page-transition';
 import StairEffect from './components/stair-effect';
 import Footer from './components/footer';
 
-const inter = Inter({
+const jetBrains = JetBrains_Mono({
   subsets: ['latin'],
   variable: '--font-sans',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className={inter.variable}>
+    <html lang='en' className={jetBrains.variable}>
       <body>
         <div className='flex flex-col min-h-screen'>
           <Header />

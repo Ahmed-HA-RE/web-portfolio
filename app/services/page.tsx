@@ -1,7 +1,13 @@
-'use client';
 import ServicesList from '@/app/components/services/services-list';
 import { CodeXmlIcon, Database } from 'lucide-react';
+import { Metadata } from 'next';
 import { FaPager, FaUserShield } from 'react-icons/fa';
+
+export const metadata: Metadata = {
+  title: 'Services',
+  description:
+    'Explore the range of services I offer, from full-stack development to secure authentication solutions.',
+};
 
 const services = [
   {

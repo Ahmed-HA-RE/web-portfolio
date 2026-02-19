@@ -8,7 +8,7 @@ const Header = () => {
       <div className='container flex items-center justify-between gap-8 py-8 xl:py-12'>
         <Link href='/'>
           <h1 className='text-4xl font-semibold'>
-            Ahmed <span className='text-primary'>.</span>
+            Ahmed<span className='text-primary'>.</span>
           </h1>
         </Link>
         {/* Desktop Navbar */}

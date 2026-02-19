@@ -37,7 +37,7 @@ const ServicesList = ({ services }: { services: Service[] }) => {
 
   return (
     <section>
-      <div className='container py-6 md:py-16 lg:pt-24 lg:pb-0'>
+      <div className='container max-md:py-12 md:pt-16 '>
         {/* Header */}
         <div className='mb-12 space-y-4 text-center max-md:px-4 sm:mb-16 lg:mb-24'>
           <motion.h2
@@ -58,7 +58,6 @@ const ServicesList = ({ services }: { services: Service[] }) => {
             From architecture to deployment delivering modern, maintainable
             full-stack applications.
           </motion.p>
-          {/* <br /> */}
 
           <motion.div
             className='flex flex-wrap items-center justify-center'
@@ -96,7 +95,7 @@ const ServicesList = ({ services }: { services: Service[] }) => {
             </div>
 
             {/* Desktop: Sticky scroll images */}
-            <div className='bg-secondary relative hidden w-full items-center justify-center space-y-20 px-6 py-20 md:block'>
+            <div className='bg-secondary relative hidden w-full items-center justify-center space-y-20 px-6 py-20 md:block overflow-y-clip'>
               <div
                 className='bg-card sticky top-1/2 flex h-125 translate-y-2 items-center justify-center overflow-hidden rounded-2xl border'
                 style={{
