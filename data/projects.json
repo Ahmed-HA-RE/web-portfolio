@@ -1,0 +1,32 @@
+[
+  {
+    "num": "01",
+    "title": "Academiq",
+    "type": "Full-Stack App",
+    "description": "Academiq is a full-stack Learning Management System (LMS) built with modern web technologies to enable instructors to create, manage, and monetize courses while providing learners with an engaging, structured learning experience. It focuses on real-world skill development, scalable course delivery, and a production-ready architecture for modern education platforms.",
+    "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS"],
+    "image": "/images/projects/project-1.png",
+    "github": "https://github.com/Ahmed-HA-RE/academiq",
+    "live": "https://academiq.ahmedrehandev.net"
+  },
+  {
+    "num": "02",
+    "title": "Bayro",
+    "type": "Full-Stack App",
+    "description": "Bayro is a comprehensive e-commerce platform designed to facilitate online shopping and streamline business operations. It offers a range of features including product management, order processing, payment integration, and customer support.",
+    "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS"],
+    "image": "/images/projects/project-2.png",
+    "github": "https://github.com/Ahmed-HA-RE/bayro",
+    "live": "https://bayro.ahmedrehandev.net"
+  },
+  {
+    "num": "03",
+    "title": "Emarq",
+    "type": "Full-Stack App",
+    "description": "A modern, end-to-end real estate rental web application built with Next.js, designed for users in the UAE to browse, list, and manage rental properties seamlessly. It features a user-friendly interface, robust search and filtering capabilities, secure authentication, and a scalable architecture to provide an efficient and enjoyable experience for both renters and property owners.",
+    "stack": ["Next.js", "TypeScript", "Mongoose", "MongoDB", "Tailwind CSS"],
+    "image": "/images/projects/project-3.png",
+    "github": "https://github.com/Ahmed-HA-RE/emarq",
+    "live": "https://emarq.ahmedrehandev.net"
+  }
+]

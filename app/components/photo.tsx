@@ -11,7 +11,7 @@ const Photo = () => {
       transition={{ duration: 0.5, delay: 2, ease: 'easeInOut' }}
       className='order-1 xl:order-2 relative size-full max-w-lg mx-auto'
     >
-      <div className='w-full h-full max-w-sm rounded-full overflow-hidden mix-blend-lighten absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
+      <div className='w-full h-full max-w-md rounded-full overflow-hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
         <Image
           src='/images/photo.png'
           alt='Ahmed Haitham'

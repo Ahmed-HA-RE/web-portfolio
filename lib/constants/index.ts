@@ -55,8 +55,8 @@ export const about = {
   ],
 };
 
-export const experiences = {
-  title: 'My Experience',
+export const builds_development = {
+  title: 'Builds & Development',
   description:
     "I've built multiple full-stack applications from concept to deployment, working across frontend, backend, and database layers. Through real projects, I've gained hands-on experience in API design, scalable architecture, and writing maintainable, production-ready code.",
   data: [

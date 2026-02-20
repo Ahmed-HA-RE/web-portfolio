@@ -111,6 +111,12 @@
   }
 }
 
+@layer components {
+  .text-outline {
+    -webkit-text-stroke: 2px var(--color-primary);
+  }
+}
+
 @property --button-angle {
   syntax: '<angle>';
   inherits: false;

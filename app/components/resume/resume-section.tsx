@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'motion/react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
-import { about, education, experiences } from '@/lib/constants';
+import { about, education, builds_development } from '@/lib/constants';
 import AboutMeTab from './about-me-tab';
 import SkillsTab from './skills-tab';
 import {
@@ -22,8 +22,8 @@ import {
 import { ImGit } from 'react-icons/im';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { BiLogoPostgresql } from 'react-icons/bi';
-import ExperienceTab from './experience-tab';
 import EducationTab from './education-tab';
+import BuildsAndDevelopmentsTab from './builds-and-developments-tab';
 
 const skills = {
   title: 'My Skills',
@@ -103,10 +103,10 @@ const Resume = () => {
       children: <SkillsTab data={skills.data} />,
     },
     {
-      value: 'experience',
-      title: experiences.title,
-      description: experiences.description,
-      children: <ExperienceTab data={experiences.data} />,
+      value: 'builds_development',
+      title: builds_development.title,
+      description: builds_development.description,
+      children: <BuildsAndDevelopmentsTab data={builds_development.data} />,
     },
     {
       value: 'education',
@@ -147,7 +147,9 @@ const Resume = () => {
             <TabsList className='w-full mx-auto xl:mx-0 bg-transparent flex flex-col gap-6 rounded-lg flex-1/3 max-w-md'>
               <TabsTrigger value='about_me'>About Me</TabsTrigger>
               <TabsTrigger value='skills'>Skills</TabsTrigger>
-              <TabsTrigger value='experience'>Experience</TabsTrigger>
+              <TabsTrigger value='builds_development'>
+                Builds & Development
+              </TabsTrigger>
               <TabsTrigger value='education'>Education</TabsTrigger>
             </TabsList>
 

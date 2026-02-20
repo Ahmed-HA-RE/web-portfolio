@@ -7,7 +7,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from './ui/sheet';
-import { Menu } from 'lucide-react';
+import { HiMiniBars3BottomRight } from 'react-icons/hi2';
 import Link from 'next/link';
 import { useState } from 'react';
 import { mobileNavigationData } from '@/lib/constants';
@@ -20,7 +20,7 @@ const MobileNav = () => {
     <nav className='md:hidden'>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild className='cursor-pointer'>
-          <Menu className='size-8 text-primary-text' />
+          <HiMiniBars3BottomRight className='size-8 text-primary-text' />
         </SheetTrigger>
         <SheetContent
           side='right'
